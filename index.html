@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/creative27/Dropbox/Vasile/Development/FLEXBOX/style.css">
+    <title>FLEXBOX</title>
+</head>
+<body>
+    <header>
+        <h1>FLEXBOX</h1>
+        <img src="/Users/creative27/Dropbox/Vasile/Development/FLEXBOX/flexbox-axis.png" alt="graph-image" class="centerimg" >
+    </header>
+    <table>
+        <tr>
+            <!--Left Column-->
+            <td>
+                <h2>Container-level-attributes</h2>
+
+                        <!--display: flex-->
+                            <h4>CSS</h4>
+                            <h3>display: flex;</h3>
+                                <ul>
+                                    <li><p>When this is applied to parent, all child elements will display as below</p></li>
+                                    <li><p>You need to define the width and height for both containers and child elements</p></li>
+                                </ul>
+                                <!--Space vertically 10px-->
+                                <div class="space-10px"></div>
+                            <div class="container" id="flex">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                         <!--display: block-->
+                         <h4>CSS</h4>
+                         <h3>display: block;</h3>
+                             <ul>
+                                 <li><p>When this is applied to parent, all child elements will display as below</p></li>
+                             </ul>
+                             <!--Space vertically 10px-->
+                             <div class="space-10px"></div>
+                            <div class="container" id="block">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                         <div class="space-vertically-25px"></div>
+
+                     <!--display: inline-flex-->
+                     <h4>CSS</h4>
+                     <h3>display: inline-flex;</h3>
+                         <ul>
+                             <li><p>This rule will allow you to position two parent containers side by side along with their child elements</p></li>
+                             <li><p>For this, you need to make sure the width of the parent container is greater than the width of the child containers put-together</p></li>
+                         </ul>
+                         <!--Space vertically 10px-->
+                         <div class="space-10px"></div>
+                     <div class="container" id="inline-flex">
+                     <div class="left"><h5>1</h5></div>
+                     <div class="center"><h5>2</h5></div>
+                     <div class="right"><h5>3</h5></div>
+                     </div>
+
+                     <div class="container" id="inline-flex">
+                        <div class="left"><h5>1</h5></div>
+                        <div class="center"><h5>2</h5></div>
+                        <div class="right"><h5>3</h5></div>
+                        </div>
+ 
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+                        <hr>
+                        <h2>Positioning Content Horizontally</h2>
+                    
+                        <!--justify-content: flex-start;-->
+                        <h4>CSS</h4>
+                        <h3>display: flex; / <span style="color:#45DAD5">justify-content: flex-start;</span></h3>
+                            <ul>
+                                <li><p>This will position the child item at the <b>left side </b>of the parent container</p></li>
+                            </ul>
+                            <!--Space vertically 10px-->
+                            <div class="space-10px"></div>
+                            <div class="container" id="jc-flex-start">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                        <!--justify-content: flex-end;-->
+                        <h4>CSS</h4>
+                        <h3>display: flex; / <span style="color:#45DAD5">justify-content: flex-end;</span></h3>
+                            <ul>
+                                <li><p>This will position the child item at the <b>right side </b>of the parent container</p></li>
+                            </ul>
+                            <!--Space vertically 10px-->
+                            <div class="space-10px"></div>
+                            <div class="container" id="jc-flex-end">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                        <!--justify-content: center;-->
+                        <h4>CSS</h4>
+                        <h3>display: flex; / <span style="color:#45DAD5">justify-content: center;</span></h3>
+                            <ul>
+                                <li><p>This will position the child item at the <b>center </b>of the parent container</p></li>
+                            </ul>
+                            <!--Space vertically 10px-->
+                            <div class="space-10px"></div>
+                            <div class="container" id="jc-center">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                        <!--justify-content: space-around;-->
+                        <h4>CSS</h4>
+                        <h3>display: flex; / <span style="color:#45DAD5">justify-content: space-around;</span></h3>
+                            <ul>
+                                <li><p>This will position the child item at the <b>center with space around </b>of the parent container</p></li>
+                            </ul>
+                            <!--Space vertically 10px-->
+                            <div class="space-10px"></div>
+                            <div class="container" id="jc-space-around">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                        <!--justify-content: space-between;-->
+                        <h4>CSS</h4>
+                        <h3>display: flex; / <span style="color:#45DAD5">justify-content: space-between;</span></h3>
+                            <ul>
+                                <li><p>This will position the child item at the <b>center with space between spanning from edge to edge </b>of the parent container</p></li>
+                            </ul>
+                            <!--Space vertically 10px-->
+                            <div class="space-10px"></div>
+                            <div class="container" id="jc-space-between">
+                            <div class="left"><h5>1</h5></div>
+                            <div class="center"><h5>2</h5></div>
+                            <div class="right"><h5>3</h5></div>
+                            </div>
+
+                        <!--Space vertically 25px-->
+                        <div class="space-vertically-25px"></div>
+
+                        <hr>
+                        <h2>Positioning Content Vertically</h2>
+
+                               <!--align-items: flex-start;-->
+                               <h4>CSS</h4>
+                               <h3>display: flex; / justify-content: center; <span style="color:#45DAD5">align-items: flex-start;</span></h3>
+                                   <ul>
+                                       <li><p>This will position the child item at the <b>top-vertically </b>of the  container</p></li>
+                                   </ul>
+                                   <!--Space vertically 10px-->
+                                   <div class="space-10px"></div>
+                                   <div class="container" id="ai-flex-start">
+                                   <div class="left"><h5>1</h5></div>
+                                   <div class="center"><h5>2</h5></div>
+                                   <div class="right"><h5>3</h5></div>
+                                   </div>
+       
+                               <!--Space vertically 25px-->
+                               <div class="space-vertically-25px"></div>
+
+                               <!--align-items: flex-end;-->
+                               <h4>CSS</h4>
+                               <h3>display: flex; / justify-content: center; <span style="color:#45DAD5">align-items: flex-end;</span></h3>
+                                   <ul>
+                                       <li><p>This will position the child item at the <b>bottom-vertically </b>of the  container</p></li>
+                                   </ul>
+                                   <!--Space vertically 10px-->
+                                   <div class="space-10px"></div>
+                                   <div class="container" id="ai-flex-end">
+                                   <div class="left"><h5>1</h5></div>
+                                   <div class="center"><h5>2</h5></div>
+                                   <div class="right"><h5>3</h5></div>
+                                   </div>
+       
+                               <!--Space vertically 25px-->
+                               <div class="space-vertically-25px"></div>
+
+                               <!--align-items: center;-->
+                               <h4>CSS</h4>
+                               <h3>display: flex; / justify-content: center; <span style="color:#45DAD5">align-items: center;</span></h3>
+                                   <ul>
+                                       <li><p>This will position the child item at the <b>center-vertically </b>of the parent container</p></li>
+                                   </ul>
+                                   <!--Space vertically 10px-->
+                                   <div class="space-10px"></div>
+                                   <div class="container" id="ai-center">
+                                   <div class="left"><h5>1</h5></div>
+                                   <div class="center"><h5>2</h5></div>
+                                   <div class="right"><h5>3</h5></div>
+                                   </div>
+       
+                               <!--Space vertically 25px-->
+                               <div class="space-vertically-25px"></div>
+
+                                <!--align-items: stretch;-->
+                                <h4>CSS</h4>
+                                <h3>display: flex; / justify-content: center; <span style="color:#45DAD5">align-items: stretch;</span></h3>
+                                    <ul>
+                                        <li><p>This <b>stretch-vertically </b>the height of the child containers tot he height of the parent container</p></li>
+                                    </ul>
+                                    <!--Space vertically 10px-->
+                                    <div class="space-10px"></div>
+                                    <div class="container" id="ai-stretch">
+                                    <div class="left-stretch"><h5>1</h5></div>
+                                    <div class="center-stretch"><h5>2</h5></div>
+                                    <div class="right-stretch"><h5>3</h5></div>
+                                    </div>
+        
+                                <!--Space vertically 25px-->
+                                <div class="space-vertically-25px"></div>
+
+                                <!--align-items: baseline;-->
+                               <h4>CSS</h4>
+                               <h3>display: flex; / justify-content: center; <span style="color:#45DAD5">align-items: baseline;</span></h3>
+                                   <ul>
+                                       <li><p>This will position the child item at the <b>baseline </b>of the parent container</p></li>
+                                       <li><p>If a child container's height is greater then the rest, all other child-items will be align with the bottom part at the same level</p></li>
+                                       <li><p><b>If you have text inside the child container </b>that is aligned at the top, the baseline of alignment for these child-containers will be aligned according to this x-axis</p></li>
+                                   </ul>
+                                   <!--Space vertically 10px-->
+                                   <div class="space-10px"></div>
+                                   <div class="container" id="ai-baseline">
+                                   <div class="left"></div>
+                                   <div class="center"></div>
+                                   <div class="right"></div>
+                                   </div>
+       
+                               <!--Space vertically 25px-->
+                               <div class="space-vertically-25px"></div>
+
+                               <!--flex-wrap: wrap;-->
+                                <h4>CSS</h4>
+                                <h3>display: flex; / justify-content: space-around; <span style="color:#45DAD5">flex-wrap: wrap;</span></h3>
+                                    <ul>
+                                        <li><p>With the wrap property, child-elements will be wrapping around.</p></li>
+                                        <li><p>Resize browser to see this happen</p></li>
+                                        <li><p>You may also use <b>flex-wrap: nowrap;</b> this will force the child elements to remain on one line</p></li>
+                                        <li><p>You may also use <b>flex-wrap: wrap-reverse;</b> this will force the child elements to be displayed from the last to the first in reverse order</p></li>
+
+                                    
+                                    </ul>
+                                    <!--Space vertically 10px-->
+                                    <div class="space-10px"></div>
+                                    <div class="container" id="flex-wrap-wrap">
+                                    <div class="child1"><h5>1</h5></div>
+                                    <div class="child2"><h5>2</h5></div>
+                                    <div class="child3"><h5>3</h5></div>
+                                    <div class="child4"><h5>4</h5></div>
+                                    <div class="child5"><h5>5</h5></div>
+                                    <div class="child6"><h5>6</h5></div>
+                                    <div class="child7"><h5>7</h5></div>
+                                    <div class="child8"><h5>8</h5></div>
+                                    <div class="child9"><h5>9</h5></div>
+                                    <div class="child10"><h5>10</h5></div>
+                                    </div>
+        
+                                <!--Space vertically 25px-->
+                                <div class="space-vertically-25px"></div>
+
+                                 <!--align-content: flex-start;-->
+                               <h4>CSS</h4>
+                               <h3>display: flex; / flex-wrap: wrap; <span style="color:#45DAD5">align-content: flex-start;</span></h3>
+                                   <ul>
+                                       <li><p>The child items will wrap around if there is no more space and be positioned at the top left of the parent container</p></li>
+                                  </ul>
+                                   <!--Space vertically 10px-->
+                                   <div class="space-10px"></div>
+                                   <div class="container" id="align-content-flex-start">
+                                   <div class="oneat"></div>
+                                   <div class="twoat"></div>
+                                   <div class="threeat"></div>
+                                   <div class="fourat"></div>
+                                   </div>
+       
+                               <!--Space vertically 25px-->
+                               <div class="space-vertically-25px"></div> 
+
+                                <!--align-content: flex-end;-->
+                                <h4>CSS</h4>
+                                <h3>display: flex; / flex-wrap: wrap; <span style="color:#45DAD5">align-content: flex-end;</span></h3>
+                                    <ul>
+                                        <li><p>The child items will wrap around if there is no more space and be positioned at the bottom left of the parent container</p></li>
+                                     </ul>
+                                    <!--Space vertically 10px-->
+                                    <div class="space-10px"></div>
+                                    <div class="container" id="align-content-flex-end">
+                                    <div class="oneat"></div>
+                                    <div class="twoat"></div>
+                                    <div class="threeat"></div>
+                                    <div class="fourat"></div>
+                                    </div>
+        
+                                <!--Space vertically 25px-->
+                                <div class="space-vertically-25px"></div> 
+
+                                <!--align-content: center;-->
+                                <h4>CSS</h4>
+                                <h3>display: flex; / flex-wrap: wrap; <span style="color:#45DAD5">align-content: center;</span></h3>
+                                    <ul>
+                                        <li><p>The child items will wrap around if there is no more space and be positioned at center of the container</p></li>
+                                        <li><p>You may also try <b>align-content: space-between;</b> <b>align-content: space-around;</b> and <b>align-content: stretch;</b></p></li>
+                                 
+                                     </ul>
+                                    <!--Space vertically 10px-->
+                                    <div class="space-10px"></div>
+                                    <div class="container" id="align-content-flex-center">
+                                    <div class="oneat"></div>
+                                    <div class="twoat"></div>
+                                    <div class="threeat"></div>
+                                    <div class="fourat"></div>
+                                    </div>
+        
+                                <!--Space vertically 25px-->
+                                <div class="space-vertically-25px"></div> 
+
+                                 <!--flex-direction: row;-->
+                                 <h4>CSS</h4>
+                                 <h3>display: flex; / justify-content: space-around; <span style="color:#45DAD5">flex-direction: row;</span></h3>
+                                     <ul>
+                                         <li><p>The child items will show in one line as show below</p></li>
+                                  
+                                      </ul>
+                                     <!--Space vertically 10px-->
+                                     <div class="space-10px"></div>
+                                     <div class="container" id="flex-direction">
+                                     <div class="onefd"><h5>1</h5></div>
+                                     <div class="twofd"><h5>2</h5></div>
+                                     <div class="threefd"><h5>3</h5></div>
+                                     <div class="fourfd"><h5>4</h5></div>
+                                     <div class="fivefd"><h5>5</h5></div>
+                                     </div>
+         
+                                 <!--Space vertically 25px-->
+                                 <div class="space-vertically-25px"></div> 
+
+                                  <!--flex-direction: row-reverse;-->
+                                  <h4>CSS</h4>
+                                  <h3>display: flex; / justify-content: space-around; <span style="color:#45DAD5">flex-direction: row-reverse;</span></h3>
+                                      <ul>
+                                          <li><p>The child items will show <b>in reverse</b> in one line as show below</p></li>
+                                   
+                                       </ul>
+                                      <!--Space vertically 10px-->
+                                      <div class="space-10px"></div>
+                                      <div class="container" id="flex-directionrr">
+                                      <div class="onefd"><h5>1</h5></div>
+                                      <div class="twofd"><h5>2</h5></div>
+                                      <div class="threefd"><h5>3</h5></div>
+                                      <div class="fourfd"><h5>4</h5></div>
+                                      <div class="fivefd"><h5>5</h5></div>
+                                      </div>
+          
+                                  <!--Space vertically 25px-->
+                                  <div class="space-vertically-25px"></div> 
+
+                                  <!--flex-direction: column;-->
+                                  <h4>CSS</h4>
+                                  <h3>display: flex; / justify-content: space-around; <span style="color:#45DAD5">flex-direction: column;</span></h3>
+                                      <ul>
+                                          <li><p>The child items will show <b>one under the other</b> as show below</p></li>
+                                   
+                                       </ul>
+                                      <!--Space vertically 10px-->
+                                      <div class="space-10px"></div>
+                                      <div class="container" id="flex-directionc">
+                                      <div class="onefd"><h5>1</h5></div>
+                                      <div class="twofd"><h5>2</h5></div>
+                                      <div class="threefd"><h5>3</h5></div>
+                                      <div class="fourfd"><h5>4</h5></div>
+                                      <div class="fivefd"><h5>5</h5></div>
+                                      </div>
+          
+                                  <!--Space vertically 25px-->
+                                  <div class="space-vertically-25px"></div> 
+
+                                   <!--flex-direction: column-reverse;-->
+                                   <h4>CSS</h4>
+                                   <h3>display: flex; / justify-content: space-around; <span style="color:#45DAD5">flex-direction: column-reverse;</span></h3>
+                                       <ul>
+                                           <li><p>The child items will show <b>one under the other in reverse order</b> as show below</p></li>
+                                    
+                                        </ul>
+                                       <!--Space vertically 10px-->
+                                       <div class="space-10px"></div>
+                                       <div class="container" id="flex-directioncr">
+                                       <div class="onefd"><h5>1</h5></div>
+                                       <div class="twofd"><h5>2</h5></div>
+                                       <div class="threefd"><h5>3</h5></div>
+                                       <div class="fourfd"><h5>4</h5></div>
+                                       <div class="fivefd"><h5>5</h5></div>
+                                       </div>
+           
+                                   <!--Space vertically 25px-->
+                                   <div class="space-vertically-25px"></div> 
+            </td>
+<!--Space between columns-->
+            <td> <div class="space-horizontally">
+                <div class="hr-vertically"></div>
+            </div></td>
+
+            <!--Right Column-->
+            <td>
+                <h2>Child-level-attributes</h2>
+                <!--flex-grow: 1;-->
+                <h4>CSS</h4>
+                <h3>display: flex; <span style="color:#45DAD5">flex-grow: 1;</span> </h3>
+                    <ul>
+                        <li><p>When this is applied to child, the element will flex to adjust to the width of the parent container</p></li>
+                        <li><p>This property was added to the left and right rectangle</p></li>
+                    </ul>
+                    <!--Space vertically 10px-->
+                    <div class="space-10px"></div>
+                <div class="container" id="top-grow">
+                <div class="side"><h5>1</h5></div>
+                <div class="middle"><h5>2</h5></div>
+                <div class="side"><h5>3</h5></div>
+                </div>
+            <!--Space vertically 25px-->
+            <div class="space-vertically-25px"></div>
+
+             <!--flex-grow: 2 center;-->
+             <h4>CSS</h4>
+             <h3>display: flex; <span style="color:#45DAD5">flex-grow: 1;</span> </h3>
+                 <ul>
+                     <li><p>When this is applied to child, the element will flex to adjust to the width of the parent container</p></li>
+                     <li><p>This property was added to the center rectangle</p></li>
+                 </ul>
+                 <!--Space vertically 10px-->
+                 <div class="space-10px"></div>
+             <div class="container" id="top-grow-center">
+             <div class="side"><h5>1</h5></div>
+             <div class="middle"><h5>2</h5></div>
+             <div class="side"><h5>3</h5></div>
+             </div>
+         <!--Space vertically 25px-->
+         <div class="space-vertically-25px"></div>
+
+         <!--flex-basis: px;-->
+         <h4>CSS</h4>
+         <h3>display: flex; <span style="color:#45DAD5">flex-basis: 50px;</span> </h3>
+             <ul>
+                 <li><p>When this is applied to child, the element will adjust to the container only once it reaches its value</p></li>
+                 <li><p>This property was added to the side rectangles</p></li>
+             </ul>
+             <!--Space vertically 10px-->
+             <div class="space-10px"></div>
+         <div class="container" id="flex-basis">
+         <div class="side"><h5>1</h5></div>
+         <div class="middle"><h5>2</h5></div>
+         <div class="side"><h5>3</h5></div>
+         </div>
+     <!--Space vertically 25px-->
+     <div class="space-vertically-25px"></div>
+         
+
+            </td>
+
+        </tr>
+    </table>
+
+
+</body>
+</html>
